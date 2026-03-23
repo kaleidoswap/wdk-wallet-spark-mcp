@@ -5,17 +5,15 @@ WORKDIR /workspace
 COPY package*.json ./
 RUN npm install
 COPY . .
-RUN npm run build
+RUN npm run build && npm prune --omit=dev
 
 # ── Runtime stage ─────────────────────────────────────────────────────────────
 FROM node:20-bookworm-slim
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y --no-install-recommends git && rm -rf /var/lib/apt/lists/*
-
 COPY --from=builder /workspace/dist ./dist/
 COPY --from=builder /workspace/package.json ./
-RUN npm install --omit=dev
+COPY --from=builder /workspace/node_modules ./node_modules/
 
 EXPOSE 3014
 
