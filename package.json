@@ -2,6 +2,8 @@
   "name": "wdk-wallet-spark-mcp",
   "version": "1.0.0",
   "description": "MCP server exposing WDK Spark wallet tools (Lightning, Spark L2, BTC bridge, token transfers) to AI agents",
+  "author": "KaleidoSwap",
+  "license": "Apache-2.0",
   "type": "module",
   "main": "./dist/index.js",
   "bin": {
