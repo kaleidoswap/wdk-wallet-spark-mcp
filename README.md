@@ -1,5 +1,10 @@
 # wdk-wallet-spark-mcp
 
+> [!IMPORTANT]
+> **This repository is archived.** All of its tools now ship in the unified
+> [**kaleido-mcp**](https://github.com/kaleidoswap/kaleido-mcp) server (0.3.0+), together with
+> KaleidoSwap DEX, RLN, Spark, Liquid and MPP/L402 tools. Use `npx -y kaleido-mcp` instead.
+
 MCP server that exposes a Spark wallet to AI agents via the Model Context Protocol.
 
 Provides the canonical `spark_*` tool surface for:
