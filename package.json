@@ -21,14 +21,14 @@
     "test": "npm run test:contract"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.10.1",
-    "@tetherto/wdk-wallet-spark": "^1.0.0-beta.11",
-    "zod": "^3.24.2"
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "@tetherto/wdk-wallet-spark": "^1.0.0-beta.28",
+    "zod": "^4.6.5"
   },
   "devDependencies": {
-    "@types/node": "^22.13.14",
-    "tsx": "^4.19.3",
-    "typescript": "^5.8.2"
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
   },
   "engines": {
     "node": ">=20"
